@@ -31,7 +31,7 @@ import java.util.Scanner;
      }
  
      // Inserta elementos
-     public void insert(Asociacion<String,String> ele)
+     public void insert(Association<String,String> ele)
      {
          SplayNode z = root;
          SplayNode p = null;                                                   
