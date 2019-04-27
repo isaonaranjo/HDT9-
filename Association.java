@@ -19,11 +19,11 @@ public class Association<K,V> implements Map.Entry<K,V>{
     public Association(K llave) {
         this(llave, null);
     }
-
-
+    
     @Override
-    public K getKey() {
-        return key;
+    public boolean equals (Object objeto) {
+        Association otroObjeto = (Association)objeto;
+        return getKey().equals(otroObjeto.getKey());
     }
 
     @Override
@@ -33,17 +33,17 @@ public class Association<K,V> implements Map.Entry<K,V>{
 
 
     @Override
+    public K getKey() {
+        return key;
+    }
+
+    @Override
     public V setValue(V nuevoValor) {
         V valorViejo = value;
         value = nuevoValor;
         return valorViejo;
     }
 
-    @Override
-    public boolean equals (Object objeto) {
-        Association otroObjeto = (Association)objeto;
-        return getKey().equals(otroObjeto.getKey());
-    }
 
 
 }
