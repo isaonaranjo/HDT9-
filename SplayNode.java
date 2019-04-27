@@ -7,7 +7,7 @@
  class SplayNode<E>
  {    
      SplayNode<E> left, right, parent;
-     protected Asociacion <String,String> element;
+     protected Association <String,String> element;
  
      // Constructor
      public SplayNode()
@@ -16,13 +16,13 @@
      }          
      
      // Constructor
-     public SplayNode(Asociacion<String,String> ele)
+     public SplayNode(Association<String,String> ele)
      {
          this(ele, null, null, null);
      } 
      
     // Constructor
-     public SplayNode(Asociacion<String,String> ele, SplayNode left, SplayNode right, SplayNode parent) {
+     public SplayNode(Association<String,String> ele, SplayNode left, SplayNode right, SplayNode parent) {
          this.left = left;
          this.right = right;
          this.parent = parent;
